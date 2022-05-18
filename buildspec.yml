@@ -23,5 +23,5 @@ batch:
 phases:
   build:
     commands:
-      - echo start testing...
+      - echo start testing from Github...
 
