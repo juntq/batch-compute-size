@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo This is build4
+      - echo This is build4 > build4.txt
+  
+artifacts:
+  files:
+    - '*'

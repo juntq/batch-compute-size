@@ -1,0 +1,27 @@
+version: 0.2
+
+batch:
+  env:
+    - privileged-mode: true
+  build-list:
+    - identifier: build1
+      buildspec: build1.yml
+      env:
+        privileged-mode: true
+        compute-type: BUILD_GENERAL1_LARGE
+        # secrets-manager:
+        #   BUILD1: test
+        #   BUILD11: test2
+    - identifier: build2
+      buildspec: build2.yml
+      # env:
+      #   variables:
+      #     BUILD2: GOGOGO
+    # - identifier: build3
+    #   buildspec: build3.yml
+
+phases:
+  build:
+    commands:
+      - echo start testing...
+

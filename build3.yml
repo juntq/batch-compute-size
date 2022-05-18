@@ -1,0 +1,11 @@
+version: 0.2
+
+env:
+  secrets-manager:
+    BUILD3: test
+
+phases:
+  build:
+    commands:
+      - echo This is build3
+      - echo $BUILD3
